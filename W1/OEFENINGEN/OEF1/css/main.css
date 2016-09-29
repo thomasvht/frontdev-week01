@@ -1,0 +1,83 @@
+/**
+* @Author: thomasvanhoutte
+* @Date:   2016-09-21T05:29:04+02:00
+* @Last modified by:   thomasvanhoutte
+* @Last modified time: 2016-09-29T09:30:44+02:00
+*/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Helvetica Neue", "Verdana", sans-serif;
+  margin: 20px;
+}
+
+h1{
+  font-size: 2em;
+}
+
+fieldset{
+  margin: 10px 5px;
+}
+
+fieldset > legend{
+  color: gray;
+  font-size: 1.8em;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  font-variant: small-caps;
+}
+
+/*OOCSS - SMACSS - BEM */
+
+.form__group{
+  margin: 5px 0;
+}
+
+.form__label{
+  display: inline-block;
+  width: 100px;
+}
+
+.form__control{
+  display: inline-block;
+  width: 200px;
+  border: 1px solid gray;
+}
+
+.form__control:invalid{
+  border-right: 3px solid red;
+}
+
+.btn{
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+.btn--round{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid orange;
+  font-size: .8em;
+}
+
+.btn__icon{
+  font-weight: bold;
+  position: relative;
+  bottom: 2px;
+  right: 1px;
+}
+
+.profileList__profile{
+  display: inline-block;
+  margin: 5px 3px;
+  color: white;
+  background-color: orange;
+  padding: 3px;
+  border-radius:8px;
+  font-size: .8em;
+}

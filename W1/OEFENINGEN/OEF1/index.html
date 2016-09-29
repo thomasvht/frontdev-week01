@@ -1,0 +1,63 @@
+<!--
+@Author: thomasvanhoutte
+@Date:   2016-09-21T05:29:04+02:00
+@Last modified by:   thomasvanhoutte
+@Last modified time: 2016-09-29T09:51:29+02:00
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 1 Formulier</title>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <h1> Week 1 : formulier</h1>
+  <form class="form">
+    <fieldset>
+      <legend>Persoonlijke gegevens</legend>
+      <div class="form__group">
+        <label class="form__label" for="voornaam">Voornaam</label>
+        <input class="form__control" type="text" required/>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="naam">Naam</label>
+        <input class="form__control" type="text" required/>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="volger">Type</label>
+        <input type="radio" name="type" id="volger"/>
+        <label class="form__label" for="volger">Volger</label>
+        <input type="radio" name="type" id="leider"/>
+        <label class="form__label" for="leider">Leider</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Contact gegevens</legend>
+      <div class="form__group">
+        <label class="form__label" for="email">Email</label>
+        <input class="form__control" type="email" id="email" required />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Voorkeuren</legend>
+      <div class="form__group">
+        <label class="form__label" for="profile">Profiel</label>
+        <select class="form__control" id="profileSelector">
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="analyst">Analyst</option>
+        </select>
+        <button id="addProfileButton" type="button" class="btn btn--round">
+          <span class="btn__icon">+</span>
+        </button>
+        <ul id="profileList" class="profileList">
+        </ul>
+    </div>
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -2,7 +2,7 @@
 * @Author: thomasvanhoutte
 * @Date:   2016-09-21T05:29:04+02:00
 * @Last modified by:   thomasvanhoutte
-* @Last modified time: 2016-09-29T10:02:46+02:00
+* @Last modified time: 2016-09-29T16:12:00+02:00
 */
 (function (){
   var addProfileButton;
@@ -37,6 +37,10 @@
     newProfile.appendChild(removeButton);
 
     document.getElementById("profileList").appendChild(newProfile);
+  }
+
+  function removeProfile(){
+    
   }
 
   function initializeElements(){
